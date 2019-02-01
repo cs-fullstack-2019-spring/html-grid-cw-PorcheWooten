@@ -1,0 +1,42 @@
+header {
+    grid-area: header;
+    background-color: darkgray;
+    padding-left: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+            "header header"
+            "content sidebar "
+            "footer footer";
+    grid-gap: 5px;
+    grid-template-columns: 3fr 2fr;
+}
+article{
+    grid-area: content;
+    padding-left: 10px;
+    background-color: darkgray;
+}
+
+aside {
+    grid-area:sidebar;
+    background-color: darkgray;
+    padding-left: 10px;
+}
+section{
+  background-color: darkgray;
+    grid-area: content;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 200px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkgray;
+    padding-left: 10px;
+}
+
+
+
